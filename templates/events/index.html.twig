@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Events around you!{% endblock %}
+
+{% block body %}
+    <div class="mt-3">
+    <div class="row">
+                          
+{% for item in event %}
+    <div class="card" style="width: 25rem;">
+    <div class="column">
+              
+                
+    <img src="{{asset('pictures/' ~ item.picture)}}" class="card-img-top" alt="" width="100%">
+    <div class="card-body">
+    <h3 class="card-title">{{item.name}}</h3>
+    <h5 class="card-text">{{item.date|date("d/M/Y g:i")}}</h5>
+                  
+    <a href="/update/{{item.id}}" class="btn btn-primary">Update</a>
+    <a href="/details/{{item.id}}" class="btn btn-warning">Details</a>
+    <a href="/delete/{{item.id}}" class="btn btn-danger">Delete</a>
+                </div>
+             </div>
+         </div>
+{% endfor %}
+   </div>
+</div>
+{% endblock %}

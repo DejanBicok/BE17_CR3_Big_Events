@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(100, 177, 81) !important;
+}
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+    border: 10px solid rgb(99, 96, 96);
+    background-color: #b1b1ab;
+    padding: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+    }
+    

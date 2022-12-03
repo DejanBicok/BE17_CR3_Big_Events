@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Event Details{% endblock %}
+
+{% block body %}
+
+<h1> Event Details: </h1>
+
+    <h2> {{event.name}} </h2>
+    <h5> {{event.date|date("d M/Y g:i") }}</h5>
+    <p>  {{event.description}}</p>
+    <h5> {{event.picture}}</h5>
+    <h5> {{event.capacity}}</h5>
+    <h5> {{event.email}}</h5>
+    <h5> {{event.phoneNumber}}</h5>
+    <h5> {{event.address}}</h5>
+    <h5> {{event.url}}</h5>
+    <h5> {{event.type}}</h5>
+
+{% endblock %}
